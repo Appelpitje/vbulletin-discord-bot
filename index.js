@@ -27,7 +27,7 @@ client.on('ready', () => {
 
         setInterval(() => {
             (async () => {
-                let feed = await parser.parseURL('https://www.x-null.net/forums/external.php?type=rss2&lastpost=1');
+                let feed = await parser.parseURL('rss-url');
                 //First launch
                 if(lastContent == ""){
                     lastContent = feed.items[0].content;
